@@ -61,7 +61,7 @@ namespace TotalnieNieFishingBot
 
         private void fishing()
         {
-                    Object pix = au3.PixelSearch(400,0,1680,1050, 0xFBD090,2);
+                    Object pix = au3.PixelSearch(400,0,1680,830, 0xFBD090,1);
                     if(pix.ToString()!="0")
                     {
                      object[] pixelCoord = (object[])pix;
@@ -86,7 +86,7 @@ namespace TotalnieNieFishingBot
             _ticks++;
             this.Text = _ticks.ToString();
 
-            if (_ticks>360)
+            if (_ticks>1000)
             {
                 this.Text = "Done";
                 timer1.Stop();
